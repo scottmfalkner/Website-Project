@@ -22,23 +22,33 @@
                     <img src="images/Big Sur Aerial.jpg" alt="">
                     <div class="middle" style="background-color: #e39783;">
                         <div class="text"> Aerial </div>
-                        <button onclick= analytics.track(SignedUp {
-                            plan: Enterprise
-                          });></button>
+                        <form onsubmit=" analytics.track('Form Submitted', {
+                            title: 'Ariel',
+                            course: 'Big Sur',
+                            });">
+                            <input type="submit" value="go to Ariel"/>
+                        </form>
                     </div>
                 </div>
                 <div class="container">
                     <img src="images/Big Sur Horizon.jpg" alt="">
                     <div class="middle" style="background-color: #e39783;">
                         <div class="text"> Horizon </div>
-                        <button></button>
+                        <form onsubmit=" analytics.track('Form Submitted', {
+                            title: 'Horizon',
+                            course: 'Big Sur',
+                            });">
+                            <input type="submit" value="go to Horizon"/>
                     </div>
                 </div>
                 <div class="container">
                     <img src="images/Catalina Rock.jpg" alt="">
                     <div class="middle" style="background-color: #e39783;">
                         <div class="text"> Rock </div>
-                        <button></button>
+                        <button onclick=" analytics.track('Button Clicked', {
+                            title: 'Ariel',
+                            course: 'Big Sur',
+                            });">></button>
                     </div>
                 </div>
                 <div class="container">
